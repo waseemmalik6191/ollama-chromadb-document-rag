@@ -1,4 +1,4 @@
-# SmartShip RAG Demo
+# [SmartShip RAG Demo](https://github.com/waseemmalik6191/ollama-chromadb-document-rag/blob/main/rag_demo_multiple.py)
 
 This project is a small local Retrieval-Augmented Generation (RAG) demo that reads plain-text project documents, turns them into searchable chunks, stores them in a local vector database, and answers questions using a local LLM via Ollama.
 
