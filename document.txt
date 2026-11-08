@@ -1,0 +1,12 @@
+
+Project: Result Processor
+
+The Result Processor application processes result events from other services.
+
+It depends on the ObjectStore component to store and retrieve objects.
+
+Before deployment, verify all runtime dependencies and run the unit tests.
+
+After significant code changes, perform regression testing.
+
+The application team is responsible for reviewing deployment logs and confirming that the service starts successfully.

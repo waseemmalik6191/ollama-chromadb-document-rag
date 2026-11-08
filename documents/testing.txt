@@ -1,0 +1,38 @@
+# SmartShip Testing Guidelines
+
+Project Code: SS-2027
+Testing Lead: Test Nair
+
+Testing Framework:
+The backend uses pytest for automated testing.
+
+Test Environments:
+- Development: Used by developers during implementation.
+- QA: Used for integration and regression testing.
+- Staging: Mirrors production configuration for release verification.
+
+Minimum Release Criteria:
+1. All critical and high-severity defects must be resolved or formally accepted.
+2. All mandatory automated tests must pass.
+3. Backend line coverage must be at least 85%.
+4. No unresolved critical security vulnerabilities are permitted.
+
+Required Test Scenarios:
+1. Register a vessel with a valid IMO number.
+2. Reject vessel registrations with duplicate IMO numbers.
+3. Create a maintenance work order linked to an existing vessel.
+4. Prevent approval of a work order without an assigned vessel.
+5. Verify that monthly repair reports contain the correct number of completed jobs.
+6. Confirm that users without administrator permissions cannot delete vessels.
+
+Performance Requirements:
+The API should respond within 500 milliseconds for 95% of requests under a load of 200 concurrent users.
+
+Defect Management:
+Every defect must include reproduction steps, expected results, actual results, and severity.
+
+Release Sign-Off:
+Priya Nair must confirm that the test report meets the release criteria before the release manager approves production deployment.
+
+Important Restriction:
+A successful application build alone is not sufficient evidence that a release is ready for production.

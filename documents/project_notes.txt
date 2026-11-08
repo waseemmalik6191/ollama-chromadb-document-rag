@@ -1,0 +1,31 @@
+# SmartShip Project Notes
+
+Project Name: SmartShip
+Project Code: SS-2027
+Project Type: Ship Maintenance Management System
+
+Purpose:
+SmartShip helps ship repair companies track vessel repairs, maintenance jobs, spare parts, and repair completion dates.
+
+Project Manager: Olivia Bennett
+Lead Developer: Daniel Foster
+Database: PostgreSQL
+Backend Technology: Python FastAPI
+Frontend Technology: React
+Hosting Environment: Internal company servers
+
+Key Features:
+1. Register vessels and store vessel identification details.
+2. Create maintenance work orders for each vessel.
+3. Assign repair technicians to work orders.
+4. Track spare parts used during repairs.
+5. Generate monthly vessel repair reports.
+
+Business Rule:
+Every maintenance work order must have a unique work order ID and an assigned vessel before it can be approved.
+
+Current Release:
+Version 2.4 is scheduled for release on 15 November 2026.
+
+Project Support Contact:
+smartship-support@example.com

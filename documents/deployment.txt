@@ -1,0 +1,37 @@
+# SmartShip Deployment Procedures
+
+Project Code: SS-2027
+Document Owner: Marcus Reed
+
+Deployment Environment:
+The production application runs on internal company servers using Windows Server 2022.
+
+Deployment Schedule:
+Production deployments are permitted on Tuesdays and Thursdays between 20:00 and 22:00 UTC.
+
+Pre-Deployment Checks:
+1. Confirm that all automated tests have passed.
+2. Verify that the PostgreSQL database backup completed successfully.
+3. Confirm that the production configuration file contains the correct database connection settings.
+4. Check that all required Python packages are available.
+5. Obtain approval from the release manager.
+
+Deployment Procedure:
+1. Stop the existing SmartShip API service.
+2. Back up the current application directory.
+3. Deploy the approved application package.
+4. Apply database migrations if required.
+5. Restart the SmartShip API service.
+6. Verify that the health endpoint returns HTTP 200.
+
+Rollback Procedure:
+If the application fails its health check for more than five minutes, restore the previous application package and revert database changes using the approved recovery procedure.
+
+Post-Deployment Verification:
+The operations team must verify vessel registration, work order creation, and monthly report generation.
+
+Deployment Approval:
+Marcus Reed, Release Manager.
+
+Important Restriction:
+Production deployments must not begin without a verified database backup and release manager approval.
